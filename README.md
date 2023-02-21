@@ -15,7 +15,7 @@ pip install cv2
 pip install pickle
 ```
 
-### Get started
+## Get started
 ```sh
 run spot_picker.py
 ```
