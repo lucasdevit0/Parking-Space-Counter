@@ -19,15 +19,20 @@ pip install pickle
 ```sh
 run spot_picker.py
 ```
-Mark parking spaces with left click, delete with right click. \n
-Output: spot_pos.pkl (stores (x,y) of each space)
+* Mark parking spaces with left click, delete with right click. \n
+* Output: spot_pos.pkl (stores (x,y) of each space)
 
 ```sh
 run section_picker.py
 ```
-Mark parking sections with left click, delete with right click. 
-Output: spot_pos.pkl (stores (x,y) of each space)
+* Mark parking sections with left click, delete with right click. 
+* Only needs upper left and lower right section corners
+* Output: section_pos.pkl (stores (x,y) of corner points selected)
 
+```sh
+run main.py
+```
+* Live update of total free spaces and free spaces in each parking section 
 
 ## Code inspired by:
 
