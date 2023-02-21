@@ -19,7 +19,7 @@ pip install pickle
 ```sh
 run spot_picker.py
 ```
-* Mark parking spaces with left click, delete with right click. \n
+* Mark parking spaces with left click, delete with right click. 
 * Output: spot_pos.pkl (stores (x,y) of each space)
 
 ```sh
