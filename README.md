@@ -37,3 +37,9 @@ run main.py
 ## Code inspired by:
 
 Murtaza's Workshop - Robotics and AI https://www.youtube.com/watch?v=caKnQlCMIYI
+
+## Reflection
+* Parking spots picked by hand. Accurancy could be improved by careful selection or automating selection process.
+* Useful to have of pixel threshold and img processing parameter intuition.
+* Wind moving camera and white marks on parking space could represent potential problems.
+* Simple computer vision techniques could solve real-world problems (no ML required)
