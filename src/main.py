@@ -28,10 +28,7 @@ with open('spot_pos.pkl', 'rb') as f:
 with open('section_pos.pkl', 'rb') as f:
         section_pos = pkl.load(f)
 
-print(int(len(section_pos)/2))
-for i in range(int(len(section_pos)/2)):
-    print('hello world')
-        
+       
 # Image processing
 def process_frame(frame):
     imgGray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
@@ -47,7 +44,7 @@ def checkParkingSpots(imgPro,frame):
     
     for pos in spot_pos:
         x = pos[0]
-        y = pos[1]-offset
+        y = pos[1] - offset
         imgCrop = imgPro[y:y+height,x:x+width]
         count = cv.countNonZero(imgCrop) #nonzero pixel count
         
@@ -137,30 +134,7 @@ def checkParkingSections(imgPro,frame,redPos,greenPos):
                     color = (255, 255, 255),
                     thickness = 2, 
                     lineType = cv.LINE_AA)
-        
-        
-        
-        
 
-            
-            
-    
-    
-    
-        
-    
-# def axisVis():
-#     #upper left, upper right, lower left
-#     pos = [(100,100),(1600,10),(100,1000)]
-
-#     for i in range(3):
-#         cv.putText(frame,'{}'.format(pos[i]),pos[i],
-#                 fontFace = cv.FONT_HERSHEY_SIMPLEX , 
-#                 fontScale = 0.5, 
-#                 color = (255, 255, 255),
-#                 thickness = 2, 
-#                 lineType = cv.LINE_AA)
-    
         
 #Read until video is completed
 while cap.isOpened():
@@ -186,5 +160,3 @@ while cap.isOpened():
     
 cap.release()
 cv.destroyAllWindows()
-
-
